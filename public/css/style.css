@@ -1,0 +1,337 @@
+/* -------------------------------------------------------------------------- */
+/* General styles */
+body {
+  height: 100%;
+  background-color: rgb(226, 202, 170);
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+::selection {
+  background-color:rgb(192, 194, 194);
+}
+
+a {
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(112, 106, 106);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* General centering content */
+.center  {
+  text-align: center;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-child {
+  display: inline-block;
+  text-align: left;
+  margin-left: 0px;
+  max-width: 880px;
+  width: 90%;
+} 
+
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.page-content {
+  height: 1000px;
+  flex-grow: 1;
+  overflow: auto;
+  min-height: 2em;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Header Styles */
+#header {
+  background-color: rgb(175, 131, 131);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  margin: 0px;
+  padding: 10px;
+  user-select: none;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#header-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 960px;
+  position: relative;
+}
+
+#header a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 1;
+}
+
+#header a:hover {
+  color: rgb(138, 38, 38);
+}
+
+#header li {
+  font-family: 'American Typewriter';
+  font-weight: 50;
+  display: inline;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px 25px 0px 0px;
+}
+
+#logo {
+  font-size: 35px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+  display: inline;
+  padding: 2px 5px 0px 5px;
+  margin: 5px 0px 0px 25px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Footer Styles */
+#footer {
+  background-color: rgb(119, 91, 91);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+#footer li {
+  display: inline;
+  margin: 2.5px;
+}
+
+#footer a {
+  color: rgb(202, 202, 202);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color:rgb(65, 64, 64);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Home Page Styles */
+#home-center {
+  display: inline-block;
+  text-align: left;
+  margin-left: inherit;
+  margin-right: inherit;
+  position: relative;
+}
+
+#home-image {
+  margin: 0px;
+  height: 640px;
+}
+
+#home-carousel {
+  width: 960px;
+  height: 230px;
+  align-items: center;
+}
+
+#home-src {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.home-carousel-slide {
+  display: flex;
+  justify-content: center;
+  height: 230px;
+}
+
+.home-carousel-slide img {
+  width: 350px;
+}
+
+.left-img-src {
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+}
+
+.right-img-src {
+  position: absolute;
+  bottom: 5px;
+  right: 260px;
+}
+
+/* Store page styles */
+.store-center {
+  display: inline-block;
+  text-align: left;
+  margin-left: inherit;
+  margin-right: inherit;
+  margin-bottom: 100px;
+  max-width: 880px;
+  width: 90%;
+  position: relative;
+} 
+.store-img {
+  height: 125px;
+  width: 175px;
+  margin: 5px 5px 5px 30px;
+  border-radius: 40px;
+}
+
+.store-item {
+  display: flex;
+  background-color:rgba(206, 166, 166, 0.6);
+  border-radius: 50px;
+  padding: 10px;
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 75%;
+}
+
+.source {
+  position: absolute;
+  font-size: 10px !important;
+  margin-top: 130px;
+  margin-left: 80px;
+}
+
+/* Purchase page Styles */
+
+#center-purchase {
+  display: inline-block;
+  margin-left: 120px;
+  margin-top: 75px;
+  max-width: 880px;
+  width: 100%;
+}
+
+#purchase-container {
+  position: relative;
+  display: flex;
+  flex-direction: space-between;
+  background-color:rgb(160, 146, 146);
+  border-radius: 25px;
+  padding: 20px;
+  width: 700px;
+}
+
+#purchase-img-lrg {
+  height: 450px;
+  width: 300px;
+  border-radius: 12px;
+}
+
+#purchase-src {
+  position: absolute;
+  top: 445px;
+  left: 40px;
+}
+
+#gram-icons {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+#gram-icons li {
+  display: inline;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.img-icon {
+  height: 50px;
+  width: 33px;
+  border-radius: 5px;
+  filter: grayscale(1);
+}
+
+.img-icon:hover {
+  filter: none;
+}
+
+#purchase-blurb {
+  flex-shrink: 0;
+  text-align: left;
+  margin: 100px;
+  width: 305px;
+  overflow-wrap: break-word;
+}
+
+/* About page Styles */
+#about-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 75px;
+  width: 880px;
+}
+
+.about-wrapper {
+  width: 400px;
+  height: 400px;
+  text-align: left;
+  margin: 25px 25px 0px 25px;
+}
+
+.about-wrapper p {
+  overflow-wrap: break-word;
+  overflow: auto;
+  height: 250px;
+}
+
+#vl {
+  border-left: 1px solid black;
+  height: 375px;
+}
+
+/* Form on About page*/
+#contact-container {
+  display: inline-block;
+  width: 800px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+#contact-form input {
+  background-color:rgba(185, 165, 165, 0.507);
+}
+
+#userText {
+  text-align: left;
+  background-color:rgba(185, 165, 165, 0.507);
+  width: 800px;
+  height: 100px;
+}
+
+#submit-button {
+  margin-top: 6px;
+  padding: 3px;
+}
